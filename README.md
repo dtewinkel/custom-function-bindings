@@ -1,10 +1,8 @@
-# custom-function-bindings - Base
+# Custom Function Bindings - Base
 
-Experiments in creating Custom Azure function bindings.
+Experiments in creating custom Azure function bindings. For the starting point of this project see the [main branch](https://github.com/dtewinkel/custom-function-bindings).
 
-This branch contains the base project structure shared by all branches with examples.
-
-For the starting point of this project see the [main branch](https://github.com/dtewinkel/custom-function-bindings).
+This branch contains the base project structure shared by all branches that contain the examples.
 
 ## Common structure
 
