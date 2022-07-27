@@ -1,8 +1,6 @@
-# custom-function-bindings
+# Custom Function Bindings
 
-Experiments in creating Custom Azure function bindings.
-
-## Basic function bindings
+Experiments in creating custom Azure function bindings.
 
 ## Base project
 
