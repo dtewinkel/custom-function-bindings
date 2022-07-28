@@ -11,10 +11,9 @@
   </ItemGroup>
 
   <Target Name="CopyPackage" AfterTargets="Pack">
-    <Copy
-      SourceFiles="$(OutputPath)..\$(PackageId).$(PackageVersion).nupkg"
-      DestinationFolder="$(NuGetOutputPath)"
-      />
+    <Copy SourceFiles="$(OutputPath)..\$(PackageId).$(PackageVersion).nupkg"
+          DestinationFolder="$(NuGetOutputPath)"
+          />
   </Target>
 
 </Project>
