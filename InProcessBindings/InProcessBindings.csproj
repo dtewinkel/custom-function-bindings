@@ -3,7 +3,6 @@
   <PropertyGroup>
     <TargetFramework>net6.0</TargetFramework>
     <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
-    <NuGetOutputPath>$(BaseOutputPath)/../../NuGet</NuGetOutputPath>
   </PropertyGroup>
 
   <ItemGroup>
@@ -12,7 +11,7 @@
 
   <Target Name="CopyPackage" AfterTargets="Pack">
     <Copy SourceFiles="$(OutputPath)..\$(PackageId).$(PackageVersion).nupkg"
-          DestinationFolder="$(NuGetOutputPath)"
+          DestinationFolder="$(BaseOutputPath)/../../NuGet"
           />
   </Target>
 
