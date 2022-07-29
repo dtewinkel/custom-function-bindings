@@ -2,7 +2,7 @@ using System;
 using Microsoft.Azure.WebJobs;
 using Microsoft.Extensions.Logging;
 
-namespace FunctionApp;
+namespace InProcessFunctionApp;
 
 public class DemoFunction
 {

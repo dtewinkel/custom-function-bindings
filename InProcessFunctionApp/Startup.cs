@@ -1,8 +1,8 @@
 ﻿using Microsoft.Azure.Functions.Extensions.DependencyInjection;
 
-[assembly: FunctionsStartup(typeof(FunctionApp.Startup))]
+[assembly: FunctionsStartup(typeof(InProcessFunctionApp.Startup))]
 
-namespace FunctionApp;
+namespace InProcessFunctionApp;
 
 public class Startup : FunctionsStartup
 {
