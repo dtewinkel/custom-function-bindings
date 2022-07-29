@@ -5,7 +5,7 @@ VisualStudioVersion = 17.2.32630.192
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "InProcessBindings", "InProcessBindings\InProcessBindings.csproj", "{2AAD5B2B-E6EF-45FB-B183-E8D2C3DD4E99}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FunctionApp", "FunctionApp\FunctionApp.csproj", "{5CC0EB0F-87E2-4D31-A4C9-7D3C8BCD3E5D}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InProcessFunctionApp", "InProcessFunctionApp\InProcessFunctionApp.csproj", "{5CC0EB0F-87E2-4D31-A4C9-7D3C8BCD3E5D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

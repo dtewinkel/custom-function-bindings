@@ -14,7 +14,7 @@ public class DemoFunction
     }
 
     [FunctionName("DemoFunction")]
-    public void Run([TimerTrigger("0 */5 * * * *", RunOnStartup = true)]TimerInfo myTimer)
+    public void Run([TimerTrigger("0 */10 * * * *", RunOnStartup = true)]TimerInfo myTimer)
     {
         var nextInvocation = (myTimer?.FormatNextOccurrences(1) ?? "unknown").ReplaceLineEndings("");
         _logger.LogInformation("C# Timer trigger function executed at: {when}. Next invocation: {nextInvocation}.", DateTime.Now, nextInvocation);
