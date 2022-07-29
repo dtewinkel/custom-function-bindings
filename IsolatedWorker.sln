@@ -5,6 +5,8 @@ VisualStudioVersion = 17.2.32630.192
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IsolatedWorkerFunctionApp", "IsolatedWorkerFunctionApp\IsolatedWorkerFunctionApp.csproj", "{A2067FC1-961C-463E-91C6-35A7C2223FCD}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IsolatedWorkerBindings", "IsolatedWorkerBindings\IsolatedWorkerBindings.csproj", "{18BEC271-0D41-404F-BD84-790F04BB1CB8}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{A2067FC1-961C-463E-91C6-35A7C2223FCD}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A2067FC1-961C-463E-91C6-35A7C2223FCD}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A2067FC1-961C-463E-91C6-35A7C2223FCD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{18BEC271-0D41-404F-BD84-790F04BB1CB8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{18BEC271-0D41-404F-BD84-790F04BB1CB8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{18BEC271-0D41-404F-BD84-790F04BB1CB8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{18BEC271-0D41-404F-BD84-790F04BB1CB8}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -13,25 +13,9 @@ public class DemoFunction
     }
 
     [Function("DemoFunction")]
-    public void Run([TimerTrigger("0 */10 * * * *", RunOnStartup = true)] MyInfo myTimer)
+    public void Run([TimerTrigger("0 */10 * * * *", RunOnStartup = true)] TimerInfo timerInfo)
     {
-        var nextInvocation = myTimer.ScheduleStatus.Next;
+        var nextInvocation = timerInfo.ScheduleStatus?.Next.ToString("o") ?? "Unknown";
         _logger.LogInformation("C# Timer trigger function executed at: {when}. Next invocation: {nextInvocation}.", DateTime.Now, nextInvocation);
     }
-}
-
-public class MyInfo
-{
-    public MyScheduleStatus ScheduleStatus { get; set; }
-
-    public bool IsPastDue { get; set; }
-}
-
-public class MyScheduleStatus
-{
-    public DateTime Last { get; set; }
-
-    public DateTime Next { get; set; }
-
-    public DateTime LastUpdated { get; set; }
 }
