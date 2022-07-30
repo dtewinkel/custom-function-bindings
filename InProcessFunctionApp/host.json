@@ -6,7 +6,8 @@
       "Host.Results": "Warning",
       "Function": "Warning",
       "Host.Aggregator": "Warning",
-      "InProcessFunctionApp.DemoFunction": "Information"
+      "InProcessFunctionApp.DemoFunction": "Information",
+      "InProcessBindings.OutputBindingAsyncCollector": "Information"
     }
   }
 }
