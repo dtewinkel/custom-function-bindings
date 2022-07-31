@@ -3,7 +3,7 @@ using Microsoft.Extensions.Logging;
 
 namespace IsolatedWorkerBindings.LoggingBinding;
 
-[AttributeUsage(AttributeTargets.Parameter | AttributeTargets.ReturnValue)]
+[AttributeUsage(AttributeTargets.Method | AttributeTargets.Property)]
 public class LoggingBindingOutputAttribute: OutputBindingAttribute
 {
     public LoggingBindingOutputAttribute(LogLevel logLevel)
@@ -11,5 +11,5 @@ public class LoggingBindingOutputAttribute: OutputBindingAttribute
         LogLevel = logLevel;
     }
 
-    public LogLevel LogLevel { get; set; }
+    public LogLevel LogLevel { get; }
 }

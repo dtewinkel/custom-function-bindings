@@ -6,8 +6,8 @@
       "Host.Results": "Warning",
       "Function": "Warning",
       "Host.Aggregator": "Warning",
-      "Function.DemoFunction": "Warning",
-      "Function.DemoFunction.User": "Information"
+      "Function.DemoFunction": "Error",
+      "Function.DemoFunction.User": "Information" 
     }
   }
 }
