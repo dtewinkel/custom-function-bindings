@@ -5,6 +5,7 @@ using Microsoft.Extensions.Logging;
 
 namespace InProcessBindings;
 
+[Extension("Output Binding Example")]
 public class InProcessBindingsExtensionConfigProvider: IExtensionConfigProvider
 {
     private readonly ILogger<LoggingBindingAsyncCollector> _logger;

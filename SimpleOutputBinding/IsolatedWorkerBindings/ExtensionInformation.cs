@@ -1,3 +1,3 @@
 ﻿using Microsoft.Azure.Functions.Worker.Extensions.Abstractions;
 
-[assembly: ExtensionInformation("InProcessBindings", "1.0.0")]
+[assembly: ExtensionInformation("InProcessBindings", "1.5.0")]
