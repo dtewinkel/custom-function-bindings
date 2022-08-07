@@ -12,7 +12,7 @@
   </ItemGroup>
 
   <Target Name="CopyPackage" AfterTargets="Pack">
-    <Copy SourceFiles="$(OutputPath)..\$(PackageId).$(PackageVersion).nupkg" DestinationFolder="$(BaseOutputPath)/../../../NuGet" />
+    <Copy SourceFiles="$(OutputPath)..\$(PackageId).$(PackageVersion).nupkg" DestinationFolder="$(CUSTOM_FUNCTION_BINDINGS_NUGET)" />
   </Target>
 
 </Project>
