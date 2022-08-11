@@ -23,14 +23,17 @@ Before any of the project can be build and tested, some setup must be done on th
 - Set environment variable `CUSTOM_FUNCTION_BINDINGS_NUGET` to the path were nuget packages for the projects can be stored.
 - Add this path to the user NuGet config. See [NuGet Config file locations](https://docs.microsoft.com/en-us/nuget/consume-packages/configuring-nuget-behavior#config-file-locations-and-uses) for where to find the user NuGet config file. See [Changing config settings](https://docs.microsoft.com/en-us/nuget/consume-packages/configuring-nuget-behavior#changing-config-settings) on how to update the NuGet config.
 
-## Projects per experiment
+## Solutions and Projects per experiment
 
-Each solution for each experiment contains four project:
+Each directory for each experiment contains two solutions:
 
-- `InProcessBindings` - Actual implementation of the Azure Function bindings. Produces a NuGet that is referenced by the `IsolatedWorkerBindings`
-- `InProcessFunctionApp` - *classic* Azure Functions app demonstrating the use of the feature from the `InProcessBindings` project.
-- `IsolatedWorkerBindings` - Implementation of the Azure Function bindings wrappers to make the bindings from the `InProcessBindings` project work in the Isolated Worker model.
-- `IsolatedWorkerFunctionApp` - Isolated Worker Azure Functions app demonstrating the Isolated worker bindings from the `IsolatedWorkerBindings`.
+- The solution `InProcess.sln`, that defines and demos the 'classic' in-process bindings. This solution also produces a NuGet package that is consumed by the other solution.
+  - `InProcessBindings` - Actual implementation of the Azure Function bindings. Produces a NuGet that is referenced by the `IsolatedWorkerBindings`
+  - `InProcessFunctionApp` - *classic* Azure Functions demonstrating the use of the feature from the `InProcessBindings` project.
+
+- The solution `IsolatedWorker.sln`, that defines and demos the bindings for the Azure Function Isolated Worker. It contains two projects:
+  - `IsolatedWorkerBindings` - Implementation of the Azure Function bindings wrappers to make the bindings from the `InProcessBindings` project work in the Isolated Worker model.
+  - `IsolatedWorkerFunctionApp` - Isolated Worker Azure Functions demonstrating the Isolated worker bindings from the `IsolatedWorkerBindings`.
 
 ## Experiments
 
