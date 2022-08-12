@@ -4,5 +4,17 @@
         "Maarten",
         "Schollaart",
         "webjobs"
-    ]
+    ],
+    "[markdown][csharp]": {
+        "editor.rulers": [
+            {
+                "column": 80,
+                "color": "#040"
+            },
+            {
+                "column": 120,
+                "color": "#630"
+            }
+        ]
+    }
 }
