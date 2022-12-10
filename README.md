@@ -18,7 +18,7 @@ I recommend reading [Maarten Balliauw](https://blog.maartenballiauw.be/)'s post 
 
 ## Local NuGet Setup
 
-Before any of the project can be build and tested, some setup must be done on the local computer:
+Before any of the projects can be build and tested, some setup must be done:
 
 - Set environment variable `CUSTOM_FUNCTION_BINDINGS_NUGET` to the path were nuget packages for the projects can be stored.
 - Add this path to the user NuGet config. See [NuGet Config file locations](https://docs.microsoft.com/en-us/nuget/consume-packages/configuring-nuget-behavior#config-file-locations-and-uses) for where to find the user NuGet config file. See [Changing config settings](https://docs.microsoft.com/en-us/nuget/consume-packages/configuring-nuget-behavior#changing-config-settings) on how to update the NuGet config.
