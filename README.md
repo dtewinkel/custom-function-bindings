@@ -12,9 +12,9 @@ Each experiment contains the documentation as comments in the code, with a READM
 
 The only purpose of this repository is experimenting with custom Azure Function bindings, so don't expect the best structured code, unit tests, or other great stuff one should do for production ready code.
 
-All experiments produce bindings for use in *classic* in process Azure Functions and for use in the new [Isolated Model](https://github.com/Azure/azure-functions-dotnet-worker) Azure Functions.
+All experiments produce bindings for use in In-process Azure Functions and for use in the [Isolated Worker Process](https://github.com/Azure/azure-functions-dotnet-worker) Azure Functions.
 
-I recommend reading [Maarten Balliauw](https://blog.maartenballiauw.be/)'s post on [Custom bindings with Azure Functions .NET Isolated Worker](https://blog.maartenballiauw.be/post/2021/06/01/custom-bindings-with-azure-functions-dotnet-isolated-worker.html). Saves me from a lot of explaining on this page.
+I recommend reading [Maarten Balliauw](https://blog.maartenballiauw.be/)'s post on [Custom bindings with Azure Functions .NET Isolated Worker](https://blog.maartenballiauw.be/post/2021/06/01/custom-bindings-with-azure-functions-dotnet-isolated-worker.html). Saves me from a lot of explaining on this page on how the In-process and Isolated Worker Process bindings are related.
 
 ## Local NuGet Setup
 
@@ -27,17 +27,17 @@ Before any of the project can be build and tested, some setup must be done on th
 
 Each directory for each experiment contains two solutions:
 
-- The solution `InProcess.sln`, that defines and demos the 'classic' in-process bindings. This solution also produces a NuGet package that is consumed by the other solution.
-  - `InProcessBindings` - Actual implementation of the Azure Function bindings. Produces a NuGet that is referenced by the `IsolatedWorkerBindings`
-  - `InProcessFunctionApp` - *classic* Azure Functions demonstrating the use of the feature from the `InProcessBindings` project.
+- The solution `InProcess.sln`, that defines and demos the In-process bindings. This solution also produces a NuGet package that is consumed by the other solution.
+  - `InProcessBindings` - Actual implementation of the Azure In-process Function bindings. Produces a NuGet that is referenced by the `IsolatedWorkerBindings`
+  - `InProcessFunctionApp` - Azure Functions demonstrating the use of the feature from the `InProcessBindings` project.
 
 - The solution `IsolatedWorker.sln`, that defines and demos the bindings for the Azure Function Isolated Worker. It contains two projects:
   - `IsolatedWorkerBindings` - Implementation of the Azure Function bindings wrappers to make the bindings from the `InProcessBindings` project work in the Isolated Worker model.
-  - `IsolatedWorkerFunctionApp` - Isolated Worker Azure Functions demonstrating the Isolated worker bindings from the `IsolatedWorkerBindings`.
+  - `IsolatedWorkerFunctionApp` - Isolated Worker Azure Functions demonstrating the Isolated Worker bindings from the `IsolatedWorkerBindings`.
 
 ## Experiments
 
-- [Simple Output Binding - README.md](./SimpleOutputBinding/README.md) - Add a simple output binding.
+- [Basic Output Binding - README.md](./BasicOutputBinding/README.md) - Add a basic output binding.
 
 ## References
 
