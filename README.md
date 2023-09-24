@@ -4,13 +4,13 @@ Experiments in creating custom Azure Function bindings.
 
 ## Introduction
 
-The repository contains a number of experiments I did to step by step discover how to write custom Azure Function bindings, one feature at a time.
+The repository contains a number of experiments I did to, step by step, discover how to write custom Azure Function bindings, one feature at a time.
 
-Each experiment is stored in a folder, where the Visual Studio solutions and projects for that experiment can be found.
+Each experiment is stored in a folder, where the Visual Studio solutions and the projects for that experiment can be found.
 
-Each experiment contains the documentation as comments in the code, with a README.md as a starting point in the root of the directory.
+Each experiment contains a README.md as a starting point in the root of the directory. More detailed documentation is provided as comments in the code.
 
-The only purpose of this repository is experimenting with custom Azure Function bindings, so don't expect the best structured code, unit tests, or other great stuff one should do for production ready code.
+The purpose of this repository is showing custom Azure Function bindings, so don't expect the best structured code, unit tests, or other great stuff one should do for production ready code.
 
 All experiments produce bindings for use in In-process Azure Functions and for use in the [Isolated Worker Process](https://github.com/Azure/azure-functions-dotnet-worker) Azure Functions.
 
@@ -22,6 +22,11 @@ Before any of the projects can be build and tested, some setup must be done:
 
 - Set environment variable `CUSTOM_FUNCTION_BINDINGS_NUGET` to the path were nuget packages for the projects can be stored.
 - Add this path to the user NuGet config. See [NuGet Config file locations](https://docs.microsoft.com/en-us/nuget/consume-packages/configuring-nuget-behavior#config-file-locations-and-uses) for where to find the user NuGet config file. See [Changing config settings](https://docs.microsoft.com/en-us/nuget/consume-packages/configuring-nuget-behavior#changing-config-settings) on how to update the NuGet config.
+
+The project contains [Polyglot Notebooks](https://marketplace.visualstudio.com/items?itemName=ms-dotnettools.dotnet-interactive-vscode) for easy setup and tear-down of the Local NuGet Setup:
+
+- [Setup](./Setup.ipynb)
+- [Tear-down](./TearDown.ipynb)
 
 ## Solutions and Projects per experiment
 
@@ -43,7 +48,7 @@ Each directory for each experiment contains two solutions:
 
 Amongst others, I used the following documentation and great projects of others as input for my experiments:
 
-- [Custom bindings with Azure Functions .NET Isolated Worker](https://blog.maartenballiauw.be/post/2021/06/01/custom-bindings-with-azure-functions-dotnet-isolated-worker.html) by Maarten Balliauw.
+- [Custom bindings with Azure Functions .NET Isolated Worker](https://blog.maartenballiauw.be/post/2021/06/01/custom-bindings-with-azure-functions-dotnet-isolated-worker.html) by [Maarten Balliauw](https://blog.maartenballiauw.be/).
 - [Azure / azure-functions-dotnet-worker](https://github.com/Azure/azure-functions-dotnet-worker) repository on GitHub.
 - [Azure / azure-webjobs-sdk Repo](https://github.com/Azure/azure-webjobs-sdk) and [Azure / azure-webjobs-sdk Wiki](https://github.com/Azure/azure-webjobs-sdk/wiki).
 - [Azure / azure-webjobs-sdk-extensions Repo](https://github.com/Azure/azure-webjobs-sdk-extensions) and [Azure / azure-webjobs-sdk-extensions Wiki](https://github.com/Azure/azure-webjobs-sdk-extensions/wiki).

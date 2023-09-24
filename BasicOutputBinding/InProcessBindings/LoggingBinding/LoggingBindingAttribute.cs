@@ -1,5 +1,4 @@
-﻿using System;
-using Microsoft.Azure.WebJobs.Description;
+﻿using Microsoft.Azure.WebJobs.Description;
 using Microsoft.Extensions.Logging;
 
 namespace InProcessBindings.LoggingBinding;
